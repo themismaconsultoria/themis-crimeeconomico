@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themis M.A - Defesa Especializada em Lavagem de Capitais e Organização Criminosa</title>
+    <meta name="description" content="Defesa técnica especializada em lavagem de capitais e organização criminosa. Teste de tipicidade, auditoria de RIF/COAF, análise de extratos bancários e estruturação de teses de defesa para advocacia criminal de alto desempenho.">
+    <meta property="og:title" content="Themis M.A - Defesa em Lavagem de Capitais e Organização Criminosa">
+    <meta property="og:description" content="Teste de tipicidade, auditoria de RIF/COAF, análise de extratos bancários e estruturação probatória para a defesa técnica em crimes econômicos.">
+    <meta property="og:image" content="https://i.pinimg.com/1200x/dc/8e/de/dc8ede7bc51d8f4ef5ed82f229394258.jpg">
+    <meta property="og:url" content="http://themisconsultoriaforense.com.br/lavagem-organizacao-criminosa">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .navy-bg { background-color: #0A192F; }
+        .accent-gold { color: #D4AF37; }
+        html { scroll-behavior: smooth; }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,.05), 0 8px 10px -6px rgba(0,0,0,.01);
+            border-color: rgba(212,175,55,.3);
+        }
+        .float-animation { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg,#D4AF37 0%,#B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        @keyframes pulse-whatsapp {
+            0% { box-shadow: 0 0 0 0 rgba(37,211,102,.6); }
+            70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+        .whatsapp-float { animation: pulse-whatsapp 2.5s infinite; }
+        .faq-content {
+            transition: all .3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+        .faq-content.open {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: 1rem;
+        }
+        .faq-icon { transition: transform .3s ease; }
+        .faq-icon.open { transform: rotate(180deg); }
+    </style>
+</head>
+
+<body class="bg-[#F8F9FA] text-slate-800 selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- Header & Navegação -->
+    <header class="fixed w-full z-50 navy-bg border-b border-white/10 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#inicio" class="flex items-center gap-4 group cursor-pointer">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full border-[3px] border-amber-500/40 p-[2px] overflow-hidden shadow-md group-hover:border-amber-500 transition-colors duration-300 bg-white">
+                    <img src="https://i.pinimg.com/1200x/dc/8e/de/dc8ede7bc51d8f4ef5ed82f229394258.jpg"
+                         alt="Foto Themis M.A"
+                         class="w-full h-full rounded-full object-cover">
+                </div>
+
+                <div class="flex flex-col border-l-2 border-white/20 pl-4">
+                    <span class="text-2xl font-bold tracking-tight text-white leading-none uppercase group-hover:text-amber-400 transition-colors">Themis M.A</span>
+                    <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-amber-500 mt-1">Defesa Penal Econômica</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-semibold text-xs uppercase tracking-widest text-slate-300">
+                <a href="#inicio" class="hover:text-amber-400 transition-colors">Início</a>
+                <a href="#especialidades" class="hover:text-amber-400 transition-colors">Frentes de Defesa</a>
+                <a href="#autoridade" class="hover:text-amber-400 transition-colors">Especialista</a>
+                <a href="#metodologia" class="hover:text-amber-400 transition-colors">Metodologia</a>
+                <a href="#contato" class="bg-gradient-to-r from-amber-600 to-amber-500 text-white px-7 py-3 rounded-full hover:from-amber-500 hover:to-amber-400 transition-all shadow-lg hover:shadow-amber-500/30 transform hover:-translate-y-0.5">Contato</a>
+            </nav>
+
+            <button class="lg:hidden text-white bg-white/10 p-2 rounded-lg hover:bg-white/20 transition-colors" id="mobile-menu-btn" aria-label="Abrir menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden absolute w-full top-full left-0 navy-bg border-t border-white/10 shadow-2xl">
+            <nav class="flex flex-col p-6 gap-6 font-semibold text-sm uppercase tracking-widest text-center text-slate-300">
+                <a href="#inicio" class="mobile-link hover:text-amber-400 transition-colors">Início</a>
+                <a href="#especialidades" class="mobile-link hover:text-amber-400 transition-colors">Frentes de Defesa</a>
+                <a href="#autoridade" class="mobile-link hover:text-amber-400 transition-colors">Especialista</a>
+                <a href="#metodologia" class="mobile-link hover:text-amber-400 transition-colors">Metodologia</a>
+                <a href="#contato" class="mobile-link bg-gradient-to-r from-amber-600 to-amber-500 text-white px-6 py-4 rounded-xl hover:from-amber-500 hover:to-amber-400 transition-all mt-2">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-36 pb-20 lg:pt-52 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50 to-slate-100">
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-amber-100/40 rounded-full blur-[120px] mix-blend-multiply"></div>
+            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-[100px] mix-blend-multiply"></div>
+        </div>
+
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative z-10">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 text-amber-700 text-[10px] font-bold uppercase tracking-widest mb-8 border border-amber-200/60 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                    Defesa Penal Econômica
+                </span>
+
+                <h1 class="text-5xl lg:text-7xl mb-8 leading-[1.1] text-slate-900">
+                    Defesa Técnica <br>Rigorosa contra <br>
+                    <span class="gradient-text italic font-bold">Acusações Genéricas.</span>
+                </h1>
+
+                <div class="mb-6">
+                    <p class="text-amber-600 uppercase tracking-[0.25em] text-xs font-bold mb-3">
+                        Lavagem de Capitais &amp; Organização Criminosa
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed max-w-2xl font-light">
+                        Teste de tipicidade, auditoria de RIF/COAF, análise de extratos bancários e estruturação de teses de defesa para advocacia criminal de alto desempenho.
+                    </p>
+                </div>
+
+                <p class="text-lg lg:text-xl text-slate-600 mb-10 max-w-xl leading-relaxed font-light">
+                    Parceira técnica exclusiva para advogados criminalistas. Transformamos movimentação financeira complexa e acusações genéricas em teses de defesa robustas e tecnicamente fundamentadas.
+                </p>
+
+                <div class="flex flex-wrap gap-5">
+                    <a href="#contato" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold hover:bg-amber-600 transition-all shadow-xl shadow-slate-900/20 hover:shadow-amber-600/30 flex items-center gap-3 group">
+                        Solicitar Análise do Caso <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#especialidades" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-xl font-bold hover:border-amber-500 hover:text-amber-600 transition-all shadow-sm">
+                        Ver Frentes de Defesa
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative hidden lg:block float-animation">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-amber-200 to-amber-50 rounded-[2rem] transform rotate-3 opacity-60"></div>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] group">
+                    <img src="https://i.pinimg.com/1200x/45/1a/10/451a10857a80b2bf0e127f65a051d5b2.jpg" alt="Defesa Penal Econômica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                    <div class="absolute bottom-10 left-10 text-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-px bg-amber-500"></div>
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-amber-400">Rigor Técnico Comprovado</p>
+                        </div>
+                        <p class="text-3xl font-serif text-white">Defesa Penal Econômica</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faixa de Números -->
+    <div class="bg-gradient-to-r from-amber-600 to-amber-500 py-10 relative z-20 shadow-xl">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
+                <div class="px-4">
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-white mb-1">19</p>
+                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-amber-100">Frentes de Defesa Testadas</p>
+                </div>
+                <div class="px-4">
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-white mb-1">100%</p>
+                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-amber-100">Fundamentação Técnica</p>
+                </div>
+                <div class="px-4">
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-white mb-1">100%</p>
+                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-amber-100">Sigilo Profissional</p>
+                </div>
+                <div class="px-4 border-r-0">
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-white mb-1"><i data-lucide="map-pin" class="w-8 h-8 mx-auto inline-block"></i></p>
+                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-amber-100">Atuação Nacional</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Identidade e Valor -->
+    <section id="sobre" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl mb-6 font-serif text-slate-900">A Nossa Identidade</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6 rounded-full"></div>
+                <p class="text-lg text-slate-500 font-light">Fundamentando a defesa técnica em lavagem de capitais e organização criminosa com rigor absoluto.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 border border-slate-100 rounded-3xl bg-slate-50/50 hover:bg-white hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,.05)] transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-100/50 rounded-bl-full -z-10 group-hover:bg-amber-100 transition-colors duration-500"></div>
+                    <div class="w-14 h-14 bg-white shadow-sm border border-slate-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-600 transition-all duration-300 group-hover:scale-110">
+                        <i data-lucide="target" class="w-7 h-7 text-slate-700 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl mb-4 font-bold text-slate-900 font-serif">A Missão</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Entregar defesa técnica incondicional contra imputações de lavagem de capitais e organização criminosa, testando cada elemento do tipo penal com rigor absoluto — sem margem para presunção.</p>
+                </div>
+
+                <div class="p-10 border border-slate-100 rounded-3xl bg-slate-50/50 hover:bg-white hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,.05)] transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-slate-200/50 rounded-bl-full -z-10 group-hover:bg-slate-200 transition-colors duration-500"></div>
+                    <div class="w-14 h-14 bg-white shadow-sm border border-slate-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-slate-900 transition-all duration-300 group-hover:scale-110">
+                        <i data-lucide="zap" class="w-7 h-7 text-slate-700 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl mb-4 font-bold text-slate-900 font-serif">O Diferencial</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Suporte técnico que separa mera movimentação financeira atípica de indício real de ocultação — transação por transação, sem generalidades, com fundamentação jurídica precisa.</p>
+                </div>
+
+                <div class="p-10 border border-slate-100 rounded-3xl bg-slate-50/50 hover:bg-white hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,.05)] transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-100/50 rounded-bl-full -z-10 group-hover:bg-amber-100 transition-colors duration-500"></div>
+                    <div class="w-14 h-14 bg-white shadow-sm border border-slate-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-600 transition-all duration-300 group-hover:scale-110">
+                        <i data-lucide="briefcase" class="w-7 h-7 text-slate-700 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl mb-4 font-bold text-slate-900 font-serif">Público-alvo</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Advogados criminalistas que precisam de teste rigoroso de tipicidade, análise de RIF/COAF e extratos bancários, e peças de defesa tecnicamente fundamentadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quando a THEMIS é acionada -->
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 opacity-95"></div>
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[100px]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <span class="text-amber-500 uppercase tracking-[0.2em] text-xs font-bold">Demandas Estratégicas</span>
+                <h2 class="text-4xl lg:text-5xl font-serif mt-6 mb-6">Quando a atuação da THEMIS se torna indispensável</h2>
+                <p class="text-slate-300 text-lg font-light">
+                    Estrutura técnica especializada para acusações de lavagem de capitais e organização criminosa, da fase de inquérito aos tribunais superiores.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/20 flex items-center justify-center text-amber-400 mb-6"><i data-lucide="alert-triangle"></i></div>
+                    <h3 class="font-serif text-xl mb-4 text-amber-400">Movimentação Financeira Atípica</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Clientes investigados por volume ou frequência incomum de movimentação bancária, sem prova de ato autônomo de dissimulação.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/20 flex items-center justify-center text-amber-400 mb-6"><i data-lucide="users"></i></div>
+                    <h3 class="font-serif text-xl mb-4 text-amber-400">Acusação de Organização Criminosa</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Denúncias que tratam parcerias comerciais pontuais como estrutura criminosa estável, sem prova de hierarquia ou permanência.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/20 flex items-center justify-center text-amber-400 mb-6"><i data-lucide="landmark"></i></div>
+                    <h3 class="font-serif text-xl mb-4 text-amber-400">RIF/COAF como Prova Isolada</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Casos em que o relatório de inteligência financeira é tratado como prova direta de crime, sem corroboração independente.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/20 flex items-center justify-center text-amber-400 mb-6"><i data-lucide="scale"></i></div>
+                    <h3 class="font-serif text-xl mb-4 text-amber-400">Estratégia Recursal</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Revisão técnica e estruturação de resposta à acusação, apelação, RESE e habeas corpus para tribunais estaduais, regionais e superiores.</p>
+                </div>
+            </div>
+
+            <div class="bg-red-950/30 border border-red-500/20 rounded-3xl p-10 mt-12">
+                <h3 class="text-3xl font-serif text-white mb-6">O que compromete uma defesa potencialmente vencedora</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 text-slate-300 text-sm">
+                    <div>• Confusão entre indício e prova direta</div>
+                    <div>• Ausência de teste do ato autônomo de dissimulação</div>
+                    <div>• RIF tratado como prova conclusiva sem corroboração</div>
+                    <div>• Denúncia genérica sem individualização de condutas</div>
+                    <div>• Cadeia de custódia digital não verificada</div>
+                    <div>• Prescrição calculada de forma incorreta</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frentes de Defesa -->
+    <section id="especialidades" class="py-24 bg-slate-50 border-y border-slate-200/60">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-amber-600 font-bold tracking-[0.2em] text-[10px] uppercase mb-3 block">Metodologia Própria</span>
+                    <h2 class="text-4xl lg:text-5xl font-serif text-slate-900 mb-4">Frentes de Defesa</h2>
+                    <p class="text-slate-500 text-lg">Oito frentes centrais — de um conjunto de 19 testadas em cada caso — desenhadas exclusivamente para defesa em crimes econômicos.</p>
+                </div>
+                <a href="#contato" class="hidden md:flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-amber-600 transition border-b-2 border-transparent hover:border-amber-600 pb-1">
+                    Solicitar Análise Específica <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="shield-alert" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Atipicidade da Lavagem</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Teste do ato autônomo de ocultação/dissimulação exigido pelo art. 1º da Lei 9.613/98 — mero trânsito de recursos não configura o crime.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="users-2" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Organização Criminosa</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Verificação de estabilidade, estrutura e divisão de tarefas exigidas pelo art. 1º, §1º, da Lei 12.850/13.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="file-check" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Análise de RIF/COAF</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Classificação de cada operação reportada: mera atipicidade bancária x indício real de ilicitude.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="calculator" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Extratos e Fracionamento</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Análise transação por transação de extratos bancários, identificação de fracionamento e padrões de PIX.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="gavel" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Colaboração Premiada</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Verificação de homologação judicial e corroboração independente de cada fato imputado ao réu (art. 4º, Lei 12.850/13).</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="landmark" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Confisco e Bens Bloqueados</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Checagem do procedimento legal para bloqueio de bens, alienação antecipada e confisco alargado (art. 91-A do CP).</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="shield-check" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Cadeia de Custódia Digital</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Verificação da origem e autenticação de documentos financeiros digitais (arts. 158-A a 158-F do CPP).</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full"></div>
+                    <div class="bg-amber-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i data-lucide="pen-tool" class="text-amber-600 w-6 h-6"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Recursos e Habeas Corpus</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Redação técnica de resposta à acusação, alegações finais, apelação e habeas corpus fundamentados em auditoria forense.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia de Atuação -->
+    <section id="metodologia" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-24">
+                <span class="text-amber-600 font-bold tracking-[0.2em] text-[10px] uppercase mb-3 block">Como Trabalhamos</span>
+                <h2 class="text-4xl lg:text-5xl mb-6 font-serif text-slate-900">Metodologia Estratégica</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6 rounded-full"></div>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg font-light">Um processo rigoroso focado em testar cada elemento típico antes de defini-lo como tese de defesa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 relative max-w-5xl mx-auto">
+                <div class="hidden md:block absolute top-[3rem] left-[15%] right-[15%] h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent z-0"></div>
+
+                <div class="relative z-10 text-center group">
+                    <div class="w-24 h-24 mx-auto bg-white border border-slate-200 shadow-xl shadow-slate-200/50 rounded-full flex items-center justify-center mb-8 group-hover:border-amber-500 group-hover:-translate-y-2 transition-all duration-300 relative">
+                        <div class="absolute inset-2 rounded-full border border-dashed border-amber-200 group-hover:rotate-180 transition-transform duration-1000"></div>
+                        <span class="text-3xl font-bold font-serif text-slate-800 group-hover:text-amber-600 transition-colors">01</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-serif text-slate-900">Diagnóstico Preliminar</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Entendimento profundo da acusação e dos fatos. Testamos, desde o início, se há ato autônomo de dissimulação e estrutura associativa estável antes de definir a estratégia.</p>
+                </div>
+
+                <div class="relative z-10 text-center group">
+                    <div class="w-24 h-24 mx-auto bg-white border border-slate-200 shadow-xl shadow-slate-200/50 rounded-full flex items-center justify-center mb-8 group-hover:border-amber-500 group-hover:-translate-y-2 transition-all duration-300 relative">
+                        <div class="absolute inset-2 rounded-full border border-dashed border-amber-200 group-hover:rotate-180 transition-transform duration-1000"></div>
+                        <span class="text-3xl font-bold font-serif text-slate-800 group-hover:text-amber-600 transition-colors">02</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-serif text-slate-900">Auditoria e Imersão</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Debruçamo-nos sobre RIF, extratos bancários e autos do processo. Cruzamos cada transação e cada indício, um a um, sem presunções genéricas.</p>
+                </div>
+
+                <div class="relative z-10 text-center group">
+                    <div class="w-24 h-24 mx-auto bg-white border border-slate-200 shadow-xl shadow-slate-200/50 rounded-full flex items-center justify-center mb-8 group-hover:border-amber-500 group-hover:-translate-y-2 transition-all duration-300 relative">
+                        <div class="absolute inset-2 rounded-full border border-dashed border-amber-200 group-hover:rotate-180 transition-transform duration-1000"></div>
+                        <span class="text-3xl font-bold font-serif text-slate-800 group-hover:text-amber-600 transition-colors">03</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-serif text-slate-900">Materialização da Prova</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">Entrega do parecer técnico e da peça de defesa. Redigimos fundamentação jurídica precisa, com as teses de atipicidade claramente demonstradas ao juízo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estudos de Caso / Impacto -->
+    <section class="py-24 bg-slate-50 border-t border-slate-200/60 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-amber-200/20 rounded-full blur-[80px] -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-slate-300/30 rounded-full blur-[80px] -z-10"></div>
+
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-bold tracking-[0.2em] text-[10px] uppercase mb-3 block">Cenários Típicos</span>
+                <h2 class="text-4xl lg:text-5xl font-serif text-slate-900 mb-4">Impacto Estratégico</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-500 text-lg font-light max-w-2xl mx-auto">Padrões de atuação recorrentes em parceria com escritórios de defesa criminal, ilustrados de forma anonimizada.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <article class="bg-white rounded-3xl p-6 border border-slate-100 shadow-lg shadow-slate-200/40 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-slate-700 to-slate-500"></div>
+                    <div class="flex items-center gap-3 mb-5 mt-2"><div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-600"><i data-lucide="shield-alert" class="w-4 h-4"></i></div><span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lavagem de Capitais</span></div>
+                    <div class="mb-4 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">O Desafio</h4><p class="text-xs text-slate-500 font-light leading-relaxed">Cliente denunciado por lavagem de capitais com base em volume elevado de movimentação em atividade comercial informal, sem indicação de ato de ocultação.</p></div>
+                    <div class="mb-5 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">A Nossa Atuação</h4><p class="text-xs text-slate-500 font-light leading-relaxed">Demonstração técnica de que o trânsito de recursos, isoladamente, não configura o ato autônomo de dissimulação exigido pelo art. 1º da Lei 9.613/98.</p></div>
+                    <div class="pt-4 border-t border-slate-100 mt-auto"><span class="block text-[9px] uppercase tracking-widest text-amber-600 font-bold mb-1">Foco da Tese</span><p class="text-base font-serif font-bold text-slate-900 leading-tight">Atipicidade da Conduta</p></div>
+                </article>
+
+                <article class="bg-white rounded-3xl p-6 border border-slate-100 shadow-lg shadow-slate-200/40 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-amber-500 to-amber-400"></div>
+                    <div class="flex items-center gap-3 mb-5 mt-2"><div class="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center text-amber-600"><i data-lucide="users-2" class="w-4 h-4"></i></div><span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Organização Criminosa</span></div>
+                    <div class="mb-4 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">O Desafio</h4><p class="text-xs text-slate-500 font-light leading-relaxed">Denúncia tratando parceria comercial pontual entre poucos agentes como organização criminosa estável.</p></div>
+                    <div class="mb-5 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">A Nossa Atuação</h4><p class="text-xs text-slate-500 font-light leading-relaxed">Mapeamento da ausência de estrutura hierárquica, divisão de tarefas e permanência exigidas pelo art. 1º, §1º, da Lei 12.850/13.</p></div>
+                    <div class="pt-4 border-t border-slate-100 mt-auto"><span class="block text-[9px] uppercase tracking-widest text-amber-600 font-bold mb-1">Foco da Tese</span><p class="text-base font-serif font-bold text-slate-900 leading-tight">Ausência de Vínculo Associativo</p></div>
+                </article>
+
+                <article class="bg-white rounded-3xl p-6 border border-slate-100 shadow-lg shadow-slate-200/40 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 to-blue-400"></div>
+                    <div class="flex items-center gap-3 mb-5 mt-2"><div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600"><i data-lucide="file-check" class="w-4 h-4"></i></div><span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Análise de RIF/COAF</span></div>
+                    <div class="mb-4 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">O Desafio</h4><p class="text-xs text-slate-500 font-light leading-relaxed">RIF apresentado como prova direta de lavagem, sem corroboração por outros elementos de prova.</p></div>
+                    <div class="mb-5 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">A Nossa Atuação</h4><p class="text-xs text-slate-500 font-light leading-relaxed">Classificação operação por operação, separando mera atipicidade bancária de indício real de ilicitude.</p></div>
+                    <div class="pt-4 border-t border-slate-100 mt-auto"><span class="block text-[9px] uppercase tracking-widest text-amber-600 font-bold mb-1">Foco da Tese</span><p class="text-base font-serif font-bold text-slate-900 leading-tight">Fragilização da Prova Acusatória</p></div>
+                </article>
+
+                <article class="bg-white rounded-3xl p-6 border border-slate-100 shadow-lg shadow-slate-200/40 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-emerald-500 to-emerald-400"></div>
+                    <div class="flex items-center gap-3 mb-5 mt-2"><div class="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600"><i data-lucide="shield-check" class="w-4 h-4"></i></div><span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Cadeia de Custódia</span></div>
+                    <div class="mb-4 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">O Desafio</h4><p class="text-xs text-slate-500 font-light leading-relaxed">Extratos bancários e documentos financeiros digitais juntados aos autos sem indicação de origem ou autenticação.</p></div>
+                    <div class="mb-5 flex-grow"><h4 class="text-xs font-bold text-slate-900 mb-1">A Nossa Atuação</h4><p class="text-xs text-slate-500 font-light leading-relaxed">Identificação da ausência de cadeia de custódia documentada, nos termos dos arts. 158-A a 158-F do CPP.</p></div>
+                    <div class="pt-4 border-t border-slate-100 mt-auto"><span class="block text-[9px] uppercase tracking-widest text-amber-600 font-bold mb-1">Foco da Tese</span><p class="text-base font-serif font-bold text-slate-900 leading-tight">Indício Tratado como Frágil</p></div>
+                </article>
+            </div>
+            <p class="text-center text-slate-400 text-xs font-light mt-10 max-w-2xl mx-auto">Cenários ilustrativos e anonimizados, representativos da metodologia aplicada. Não constituem garantia de resultado em casos futuros.</p>
+        </div>
+    </section>
+
+    <!-- Autoridade / Especialista -->
+    <section id="autoridade" class="py-24 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="bg-slate-50 rounded-[3rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-2/5 aspect-[4/5] md:aspect-auto md:h-auto self-stretch relative">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Especialista Responsável" class="w-full h-full object-cover object-[center_10%] md:object-center">
+                    <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                </div>
+                <div class="md:w-3/5 p-10 md:p-16">
+                    <span class="text-amber-600 font-bold tracking-[0.2em] text-[10px] uppercase mb-3 block">Diretoria Técnica</span>
+                    <h2 class="text-3xl lg:text-4xl font-serif text-slate-900 mb-6">Excelência por trás dos pareceres</h2>
+                    <p class="text-slate-600 leading-relaxed font-light mb-6">
+                        Com atuação fundamentada em direito penal econômico, a <strong>Themis M.A</strong> foi desenhada para preencher a lacuna de suporte técnico especializado exigido pela defesa contra lavagem de capitais e organização criminosa.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed font-light mb-8">
+                        O nosso compromisso não é apenas entregar pareceres, mas sim <strong>construir, junto ao advogado criminalista, teses de atipicidade e ausência de estrutura delitiva</strong> tecnicamente sólidas, prontas para sustentar a defesa em juízo.
+                    </p>
+                    <div class="flex items-center gap-4 pt-6 border-t border-slate-200">
+                        <div class="w-12 h-12 bg-white shadow-sm border border-slate-100 rounded-full flex items-center justify-center text-amber-600"><i data-lucide="award" class="w-6 h-6"></i></div>
+                        <div>
+                            <p class="font-bold text-sm text-slate-900">Defesa Penal Econômica Especializada</p>
+                            <p class="text-xs text-slate-500 font-light">Rigor técnico em cada elemento do tipo penal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Reconhecimento do Mercado -->
+    <section class="py-24 navy-bg text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl lg:text-5xl text-center mb-4 font-serif italic text-white">Reconhecimento do Mercado</h2>
+            <p class="text-center text-amber-500/80 mb-20 uppercase tracking-[0.2em] text-xs font-bold">Vozes da Advocacia Criminal</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border border-white/10 p-10 rounded-3xl bg-white/[0.03] hover:bg-white/[0.06] transition-colors backdrop-blur-sm relative">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-12 h-12 text-white/5"></i>
+                    <p class="text-lg mb-10 leading-relaxed text-slate-300 font-light">"A tese de atipicidade construída com o suporte técnico da Themis M.A foi decisiva para afastar a imputação de lavagem no nosso caso."</p>
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-bold text-white shadow-lg">SD</div><div><p class="font-bold text-sm text-white">Sócio-Diretor</p><p class="text-[10px] text-amber-500/80 uppercase tracking-wider">Banca Criminal de Elite</p></div></div>
+                </div>
+
+                <div class="border border-white/10 p-10 rounded-3xl bg-white/[0.03] hover:bg-white/[0.06] transition-colors backdrop-blur-sm relative">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-12 h-12 text-white/5"></i>
+                    <p class="text-lg mb-10 leading-relaxed text-slate-300 font-light">"A análise transação por transação do extrato bancário mostrou exatamente onde a acusação presumia em vez de provar."</p>
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-bold text-white shadow-lg">CP</div><div><p class="font-bold text-sm text-white">Coordenador Penal</p><p class="text-[10px] text-amber-500/80 uppercase tracking-wider">Escritório Boutique Criminal</p></div></div>
+                </div>
+
+                <div class="border border-white/10 p-10 rounded-3xl bg-white/[0.03] hover:bg-white/[0.06] transition-colors backdrop-blur-sm relative">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-12 h-12 text-white/5"></i>
+                    <p class="text-lg mb-10 leading-relaxed text-slate-300 font-light">"A auditoria do RIF foi fundamental para demonstrar que o relatório do COAF, isoladamente, não sustentava a denúncia."</p>
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-bold text-white shadow-lg">HC</div><div><p class="font-bold text-sm text-white">Head de Compliance</p><p class="text-[10px] text-amber-500/80 uppercase tracking-wider">Banca Full-Service</p></div></div>
+                </div>
+
+                <div class="border border-white/10 p-10 rounded-3xl bg-white/[0.03] hover:bg-white/[0.06] transition-colors backdrop-blur-sm relative">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-12 h-12 text-white/5"></i>
+                    <p class="text-lg mb-10 leading-relaxed text-slate-300 font-light">"A revisão da cadeia de custódia dos documentos digitais abriu uma frente de defesa que não tínhamos identificado."</p>
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-bold text-white shadow-lg">SC</div><div><p class="font-bold text-sm text-white">Sócia de Contencioso Criminal</p><p class="text-[10px] text-amber-500/80 uppercase tracking-wider">Escritório de Direito Penal Econômico</p></div></div>
+                </div>
+
+                <div class="border border-white/10 p-10 rounded-3xl bg-white/[0.03] hover:bg-white/[0.06] transition-colors backdrop-blur-sm relative">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-12 h-12 text-white/5"></i>
+                    <p class="text-lg mb-10 leading-relaxed text-slate-300 font-light">"O teste rigoroso dos elementos da organização criminosa nos deu segurança técnica para sustentar a ausência de vínculo associativo estável."</p>
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-bold text-white shadow-lg">AC</div><div><p class="font-bold text-sm text-white">Advogado Criminalista</p><p class="text-[10px] text-amber-500/80 uppercase tracking-wider">Banca Individual</p></div></div>
+                </div>
+
+                <div class="border border-white/10 p-10 rounded-3xl bg-white/[0.03] hover:bg-white/[0.06] transition-colors backdrop-blur-sm relative">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-12 h-12 text-white/5"></i>
+                    <p class="text-lg mb-10 leading-relaxed text-slate-300 font-light">"Precisão técnica incomum em casos de lavagem de capitais — cada tese vem fundamentada artigo por artigo, sem generalidades."</p>
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-bold text-white shadow-lg">GJ</div><div><p class="font-bold text-sm text-white">Gerente Jurídico</p><p class="text-[10px] text-amber-500/80 uppercase tracking-wider">Departamento de Compliance Corporativo</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atuação Técnica Sob Critério Estratégico -->
+    <section class="py-24 bg-white border-y border-slate-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+                <div class="relative z-10">
+                    <span class="text-amber-500 uppercase tracking-[0.25em] text-xs font-bold">Atuação Institucional</span>
+                    <h2 class="text-4xl lg:text-5xl text-white font-serif mt-6 mb-8">Atuação Técnica Sob Critério Estratégico</h2>
+                    <p class="text-slate-300 text-lg leading-relaxed font-light max-w-3xl mx-auto">
+                        A THEMIS M.A atua de forma seletiva em defesa contra lavagem de capitais e organização criminosa, assumindo demandas com viabilidade técnica, relevância estratégica e potencial probatório compatível com o padrão institucional da consultoria.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-bold tracking-[0.2em] text-[10px] uppercase mb-3 block">Transparência</span>
+                <h2 class="text-4xl font-serif text-slate-900 mb-4">Dúvidas Frequentes</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-amber-400 transition-colors" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center"><h4 class="font-bold text-slate-900 pr-4">Vocês atuam em qualquer fase do processo?</h4><i data-lucide="chevron-down" class="text-amber-600 w-5 h-5 flex-shrink-0 faq-icon"></i></div>
+                    <div class="faq-content text-slate-600 text-sm font-light">Sim. Atuamos desde o inquérito policial até recursos em tribunais superiores — incluindo resposta à acusação, alegações finais, apelação, recurso em sentido estrito, habeas corpus e revisão de medidas cautelares.</div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-amber-400 transition-colors" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center"><h4 class="font-bold text-slate-900 pr-4">Como é feita a análise de RIF e extratos bancários?</h4><i data-lucide="chevron-down" class="text-amber-600 w-5 h-5 flex-shrink-0 faq-icon"></i></div>
+                    <div class="faq-content text-slate-600 text-sm font-light">Cada operação é classificada individualmente — nunca em bloco —, separando mera atipicidade bancária de indício real de ocultação, com fundamentação jurídica específica para cada uma. Identificamos ainda padrões de fracionamento e a suficiência probatória do relatório isoladamente.</div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-amber-400 transition-colors" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center"><h4 class="font-bold text-slate-900 pr-4">A Themis M.A assina Termo de Confidencialidade (NDA)?</h4><i data-lucide="chevron-down" class="text-amber-600 w-5 h-5 flex-shrink-0 faq-icon"></i></div>
+                    <div class="faq-content text-slate-600 text-sm font-light">Sim. A segurança e o sigilo das informações dos seus clientes são a nossa prioridade zero. Assinamos Acordos de Confidencialidade (NDA) rigorosos antes da partilha de qualquer documento ou início do diagnóstico técnico.</div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-amber-400 transition-colors" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center"><h4 class="font-bold text-slate-900 pr-4">O atendimento abrange todo o território nacional?</h4><i data-lucide="chevron-down" class="text-amber-600 w-5 h-5 flex-shrink-0 faq-icon"></i></div>
+                    <div class="faq-content text-slate-600 text-sm font-light">Completamente. Atuamos em âmbito nacional de forma digital, auxiliando escritórios em processos eletrônicos de todas as comarcas, varas criminais federais e tribunais do Brasil.</div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-amber-400 transition-colors" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center"><h4 class="font-bold text-slate-900 pr-4">Qual é o prazo médio de entrega de um parecer?</h4><i data-lucide="chevron-down" class="text-amber-600 w-5 h-5 flex-shrink-0 faq-icon"></i></div>
+                    <div class="faq-content text-slate-600 text-sm font-light">Os prazos variam conforme o volume documental (extratos, RIF, autos) e a complexidade do caso. A metodologia prevê alinhamento de cronogramas urgentes, respeitando os prazos processuais penais.</div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-amber-400 transition-colors" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center"><h4 class="font-bold text-slate-900 pr-4">Como funciona o Diagnóstico Técnico inicial?</h4><i data-lucide="chevron-down" class="text-amber-600 w-5 h-5 flex-shrink-0 faq-icon"></i></div>
+                    <div class="faq-content text-slate-600 text-sm font-light">Basta preencher o formulário ao final da página. A equipe entra em contato para compreender a acusação, avaliar a viabilidade técnica das teses de defesa e encaminhar proposta de atuação.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocolo Técnico THEMIS -->
+    <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 uppercase tracking-[0.25em] text-xs font-bold">Metodologia Exclusiva</span>
+                <h2 class="text-4xl lg:text-5xl font-serif text-slate-900 mt-6 mb-6">Protocolo Técnico THEMIS</h2>
+                <p class="text-slate-500 text-lg font-light max-w-3xl mx-auto">Toda demanda submetida passa por rigorosa triagem técnica antes da atuação especializada em defesa penal econômica.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover"><div class="flex items-center gap-4"><span class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center font-bold">01</span><p class="font-semibold text-slate-800">Triagem técnica da acusação</p></div></div>
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover"><div class="flex items-center gap-4"><span class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center font-bold">02</span><p class="font-semibold text-slate-800">Auditoria documental e processual</p></div></div>
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover"><div class="flex items-center gap-4"><span class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center font-bold">03</span><p class="font-semibold text-slate-800">Teste de tipicidade (lavagem e organização criminosa)</p></div></div>
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover"><div class="flex items-center gap-4"><span class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center font-bold">04</span><p class="font-semibold text-slate-800">Estruturação da defesa técnica</p></div></div>
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover"><div class="flex items-center gap-4"><span class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center font-bold">05</span><p class="font-semibold text-slate-800">Análise de viabilidade técnica</p></div></div>
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover"><div class="flex items-center gap-4"><span class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center font-bold">06</span><p class="font-semibold text-slate-800">Parecer técnico especializado</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 bg-[#F8F9FA]">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="bg-white rounded-[2rem] md:rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
+                <div class="lg:w-2/5 navy-bg p-6 sm:p-10 lg:p-16 text-white relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl"></div>
+                    <div class="relative z-10">
+                        <span class="text-amber-500 font-bold tracking-[0.2em] text-[10px] uppercase mb-3 block">Atendimento Especializado</span>
+                        <h2 class="text-4xl mb-6 font-serif">Canais de Contato</h2>
+                        <p class="text-slate-300 mb-12 leading-relaxed font-light">Atuamos em âmbito nacional. Entre em contato para diagnósticos técnicos e auditorias forenses em casos de lavagem de capitais e organização criminosa, com total confidencialidade.</p>
+
+                        <div class="space-y-8 md:space-y-10">
+                            <a href="https://wa.me/5511978353047" target="_blank" rel="noopener noreferrer" class="flex gap-3 md:gap-5 group cursor-pointer items-center">
+                                <div class="flex-shrink-0 w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-600 transition-colors">
+                                    <i data-lucide="phone" class="text-amber-500 group-hover:text-white transition-colors w-4 h-4 md:w-6 md:h-6"></i>
+                                </div>
+                                <div><p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">WhatsApp Corporativo</p><p class="text-base sm:text-lg md:text-xl font-serif group-hover:text-amber-400 transition-colors">+55 (11) 97835-3047</p></div>
+                            </a>
+
+                            <a href="mailto:themis.ma.consultoria@gmail.com" class="flex gap-3 md:gap-5 group cursor-pointer items-center">
+                                <div class="flex-shrink-0 w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-amber-600 transition-colors">
+                                    <i data-lucide="mail" class="text-amber-500 group-hover:text-white transition-colors w-4 h-4 md:w-6 md:h-6"></i>
+                                </div>
+                                <div><p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">E-mail Institucional</p><p class="text-[13px] sm:text-sm md:text-lg font-light group-hover:text-amber-400 transition-colors">themis.ma.consultoria@&#8203;gmail.com</p></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-20 pt-8 border-t border-white/10 flex items-center gap-6 relative z-10">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-amber-600 hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-amber-600 hover:text-white transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:w-3/5 p-6 sm:p-10 lg:p-16">
+                    <h2 class="text-3xl mb-3 font-serif italic text-slate-900">Diagnóstico Técnico</h2>
+                    <p class="text-slate-500 mb-10 text-sm font-light">Formulário para solicitações confidenciais e agendamento de suporte técnico em defesa penal econômica.</p>
+
+                    <div class="bg-amber-50 border border-amber-200 rounded-3xl p-8 mb-12">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-amber-500 flex items-center justify-center text-white flex-shrink-0">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-serif text-slate-900 mb-4">Confidencialidade Institucional</h3>
+                                <p class="text-slate-700 leading-relaxed font-light">
+                                    Todas as demandas submetidas à THEMIS M.A são conduzidas sob absoluto sigilo técnico, estratégico e documental, garantindo proteção integral das informações processuais, patrimoniais e financeiras envolvidas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" action="https://formsubmit.co/themis.ma.consultoria@gmail.com" method="POST" class="grid md:grid-cols-2 gap-6">
+                        <input type="hidden" name="_subject" value="Novo Contato — Defesa em Lavagem de Capitais / Organização Criminosa">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Advogado / Escritório</label>
+                            <input type="text" name="Nome_ou_Escritorio" required class="w-full px-5 py-4 bg-[#F8F9FA] border border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white transition-all">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-slate-500">E-mail Corporativo</label>
+                            <input type="email" name="Email_de_Contato" required class="w-full px-5 py-4 bg-[#F8F9FA] border border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white transition-all">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Telefone para Contato</label>
+                            <input type="tel" name="Telefone" required class="w-full px-5 py-4 bg-[#F8F9FA] border border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white transition-all">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Área de Interesse</label>
+                            <div class="relative">
+                                <select name="Area_de_Interesse" class="w-full px-5 py-4 bg-[#F8F9FA] border border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white transition-all appearance-none cursor-pointer">
+                                    <option>Defesa em Lavagem de Capitais</option>
+                                    <option>Defesa em Organização Criminosa</option>
+                                    <option>Análise de RIF/COAF</option>
+                                    <option>Análise de Extrato Bancário</option>
+                                    <option>Resposta à Acusação / Alegações Finais</option>
+                                    <option>Apelação / Recurso</option>
+                                    <option>Habeas Corpus / Prisão Preventiva</option>
+                                    <option>Outros</option>
+                                </select>
+                                <i data-lucide="chevron-down" class="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"></i>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-2 space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Descrição Sumária da Demanda (Confidencial)</label>
+                            <textarea name="Mensagem" rows="4" required class="w-full px-5 py-4 bg-[#F8F9FA] border border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white transition-all resize-none"></textarea>
+                        </div>
+
+                        <div class="md:col-span-2 pt-2">
+                            <button type="submit" class="w-full py-5 bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl font-bold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-xl shadow-slate-900/10 flex items-center justify-center gap-3 group">
+                                <span>Enviar para Consultoria Especializada</span> <i data-lucide="send" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="form-success" class="hidden mt-6 p-5 bg-green-50/80 text-green-700 rounded-2xl text-center font-medium border border-green-200 backdrop-blur-sm flex items-center justify-center gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5"></i> Solicitação enviada com sucesso. A nossa equipe técnica entrará em contato.
+                    </div>
+
+                    <div id="form-error" class="hidden mt-6 p-5 bg-red-50/80 text-red-700 rounded-2xl text-center font-medium border border-red-200 backdrop-blur-sm">
+                        Não foi possível enviar a solicitação neste momento. Tente novamente ou entre em contato pelo WhatsApp.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="navy-bg text-white py-10 border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <p class="font-serif text-2xl">Themis M.A</p>
+                <p class="text-[10px] uppercase tracking-[0.3em] text-amber-500 font-bold mt-1">Defesa Penal Econômica</p>
+            </div>
+            <p class="text-sm text-slate-400 text-center md:text-right">
+                Defesa Técnica Especializada em Lavagem de Capitais e Organização Criminosa.<br>
+                Atuação nacional com sigilo técnico e estratégico.
+            </p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5511978353047" target="_blank" rel="noopener noreferrer" class="whatsapp-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" aria-label="WhatsApp">
+        <i data-lucide="phone" class="w-7 h-7"></i>
+    </a>
+
+    <script>
+        lucide.createIcons();
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu) mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function toggleFaq(element) {
+            const content = element.querySelector('.faq-content');
+            const icon = element.querySelector('.faq-icon');
+            if (content) content.classList.toggle('open');
+            if (icon) icon.classList.toggle('open');
+        }
+
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('form-success');
+        const error = document.getElementById('form-error');
+
+        if (form) {
+            form.addEventListener('submit', async function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        form.reset();
+                        if (success) success.classList.remove('hidden');
+                        if (error) error.classList.add('hidden');
+                    } else {
+                        if (error) error.classList.remove('hidden');
+                        if (success) success.classList.add('hidden');
+                    }
+                } catch (e) {
+                    if (error) error.classList.remove('hidden');
+                    if (success) success.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
